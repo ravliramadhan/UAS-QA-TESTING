@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.13 on darwin)" generated="20231209 13:48:03.786" rpa="false" schemaversion="4">
+<suite id="s1" name="Test-Suite" source="/Users/agungperdananto/Workspace/automation/basic-automation/test-web/test-suite.robot">
+<test id="s1-t1" name="testcase-login-1" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:8000</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231209 13:48:03.880" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8000'.</msg>
+<status status="PASS" starttime="20231209 13:48:03.880" endtime="20231209 13:48:06.849"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231209 13:48:06.850" level="INFO">Clicking element 'xpath://a[@href='/login']'.</msg>
+<status status="PASS" starttime="20231209 13:48:06.849" endtime="20231209 13:48:06.956"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231209 13:48:06.962" level="INFO">Current page contains element 'xpath://input[@name='email']'.</msg>
+<status status="PASS" starttime="20231209 13:48:06.956" endtime="20231209 13:48:06.962"/>
+</kw>
+<status status="PASS" starttime="20231209 13:48:03.880" endtime="20231209 13:48:06.962"/>
+</test>
+<status status="PASS" starttime="20231209 13:48:03.787" endtime="20231209 13:48:06.963"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test-Suite">Test-Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
